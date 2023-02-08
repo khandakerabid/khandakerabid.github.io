@@ -1,0 +1,50 @@
+* {
+    background-color:	#36393e;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+head {
+    text-align: center;
+    text-shadow: 2px 2px 7px #1f3c6b;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img {
+    box-shadow: 5px 5px 15px #000000;
+    border-radius: 20px;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.imgs {
+    display: flex;
+}
+.img {
+    margin:30px;
+}
+.img:nth-child(2) {
+    transition-delay: 250ms;
+}
+.img:nth-child(3) {
+    transition-delay: 500ms;
+}
